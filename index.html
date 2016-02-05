@@ -5,20 +5,22 @@
 		<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
 		<title>PROBOT</title>
 	</head>
-
+<!--Zanemarite ove ng-nesto pizdarije. To su neke angular direktive, trenutno to nista ne radi dok ne sredim kontroler i app-->
 	<body ng-app="probotApp" ng-controller="MainController as details">
+		
 		<div class="header">
 			<div class="container">
 				<img src="/img/logoGa.png" height="300" width="300">
 			</div>
 		</div>
-
+<!--Ovo bi zapravo bio nekakav jumbotron-->
 		<div class="title">
 			<div class="container">
 				<h1>Welcome to PRobot</h1>
 			</div>
 		</div>
-
+<!--Ovdje mi je plan napravit angular aplikaciju koja ce uzimat detalje o PR-u iz forme i
+	kreirat objekt kojeg ce potom ubaciti u novi <div class="results">-->
 		<div class="main">
 			<div class="container">
 				<h2>PR PR Youth of the Nation!</h2>
@@ -39,7 +41,23 @@
 
 		<div class="results">
 			<div class="container">
-			</div>
+				<p>Ovdje bi se napravio recimo bootstrap column koji sadrzi podatke o necijim PR-ovima</p>
+				<p>Znaci angular ima taj ng-repeat directive koji kreira html elemente za svaki objekt ili kako god mu ti nastimas (npr. za svaki property objekta)</p>
+				<div class="result1">
+					<h2>Gonzo</h2>
+					<p>Deadlift:</p>
+					<p>180 kg</p>
+				</div>
+				<div class="result1">
+					<h2>Frenzy</h2>
+					<p>Deadlift:</p>
+					<p>5 kg</p>
+			    </div>
+			    <div class="result1">
+					<h2>Pinky</h2>
+					<p>Deadlift:</p>
+					<p>slomljena kicma</p>
+			    </div>
 		</div>
 
 		<div class="footer">
