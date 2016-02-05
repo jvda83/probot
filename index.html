@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+		<title>PROBOT</title>
+	</head>
+
+	<body ng-app="probotApp" ng-controller="MainController as details">
+		<div class="header">
+			<div class="container">
+				<img src="/img/logoGa.png" height="300" width="300">
+			</div>
+		</div>
+
+		<div class="title">
+			<div class="container">
+				<h1>Welcome to PRobot</h1>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="container">
+				<h2>PR PR Youth of the Nation!</h2>
+				<form>
+					Name:<br>
+					<input type="text" name="name" placeholder="Enter your name mortal!" ng-model="details.name" required><br>
+					Lift:<br>
+					<input type="text" name="lift" placeholder="Pussy!" ng-model="details.lift" required><br>
+					Weight lifted:<br>
+					<input type="number" name="weight" placeholder="Weakling!" ng-model="weight" required>
+					<select> 
+						<option></option>
+					</select><br>
+					<input type="submit" value="Submit"> 
+				</form>
+			</div>
+		</div>
+
+		<div class="results">
+			<div class="container">
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>Copyright: <span id="logo">GuerillaAthletics</span> 2016</p>
+		</div>
+	</body>
+<script src="js/vendors/angular.min.js"></script>
+<script src="js/vendors/jquery-2.2.0.min.js"></script>
+</html>
