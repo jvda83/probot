@@ -41,6 +41,13 @@ body {
 	color: white;
 	text-shadow: 2px 2px 2px #000;
 	font-family: 'Cinzel', serif;
+	text-transform: uppercase;
+}
+
+.title h2 {
+	font-family: 'Cinzel', serif;
+	text-shadow: 1px 1px 1px #000;
+	color: white;
 }
 
 .main {
@@ -69,7 +76,6 @@ body {
 }
 
 .footer {
-	position: fixed;
 	left: 0px;
 	bottom: 0px;
 	height: 30px;
