@@ -24,16 +24,14 @@ vdje mi je plan napravit angular aplikaciju koja ce uzimat detalje o PR-u iz for
 		--><div class="main">
 			<div class="container">
 				<h2>PR PR Youth of the Nation!</h2>
-				<form>
+				<form class="input">
 					Name:<br>
-					<input type="text" name="name" placeholder="Enter your name mortal!" ng-model="details.name" required><br>
+					<input type="text" id="name" placeholder="Enter your name mortal!" ng-model="details.name" required><br>
 					Lift:<br>
-					<input type="text" name="lift" placeholder="Pussy!" ng-model="details.lift" required><br>
-					Weight lifted:<br>
-					<input type="number" name="weight" placeholder="Weakling!" ng-model="weight" required>
-					<select> 
-						<option></option>
-					</select><br>
+					<input type="text" id="lift" placeholder="Pussy!" ng-model="details.lift" required><br>
+					Weight lifted (kg):<br>
+					<input type="number" id="weight" placeholder="Weakling!" ng-model="weight" required>
+					<br>
 					<input type="submit" value="Submit"> 
 				</form>
 			</div>
@@ -42,20 +40,20 @@ vdje mi je plan napravit angular aplikaciju koja ce uzimat detalje o PR-u iz for
 			<div class="container">
 				<p>Ovdje bi se napravio recimo bootstrap column koji sadrzi podatke o necijim PR-ovima</p>
 				<p>Znaci angular ima taj ng-repeat directive koji kreira html elemente za svaki objekt ili kako god mu ti nastimas (npr. za svaki property objekta)</p>
-				<div class="result1">
+				<div class="result-field" id="gonzo">
 					<h2>Gonzo</h2>
-					<p>Deadlift:</p>
-					<p>180 kg</p>
 				</div>
-				<div class="result1">
+				<div class="result-field" id="frenzy">
 					<h2>Frenzy</h2>
-					<p>Deadlift:</p>
-					<p>5 kg</p>
 			    </div>
-			    <div class="result1">
+			    <div class="result-field" id="pinky">
 					<h2>Pinky</h2>
-					<p>Deadlift:</p>
-					<p>slomljena kicma</p>
+			    </div>
+				<div class="result-field" id="srki">
+					<h2>Srki</h2>
+			    </div>
+			    <div class="result-field" id="max">
+					<h2>Max</h2>
 			    </div>
 			</div>
 		</div>
@@ -63,6 +61,8 @@ vdje mi je plan napravit angular aplikaciju koja ce uzimat detalje o PR-u iz for
 			<p>Copyright: <span id="logo">GuerillaAthletics</span> 2016</p>
 		</div>
 	</body>
-<script src="js/vendors/angular.min.js"></script>
 <script src="js/vendors/jquery-2.2.0.min.js"></script>
+<script src="app.js"type="text/javascript"></script>	
+<script src="js/vendors/angular.min.js"></script>
+
 </html>
