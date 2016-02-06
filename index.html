@@ -3,6 +3,7 @@
 	<head>
 		<link rel="stylesheet" href="style.css" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+		
 		<title>PROBOT</title>
 	</head><!--
 Zanemarite ove ng-nesto pizdarije. To su neke angular direktive, trenutno to nista ne radi dok ne sredim kontroler i app
@@ -23,8 +24,15 @@ vdje mi je plan napravit angular aplikaciju koja ce uzimat detalje o PR-u iz for
 	kreirat objekt kojeg ce potom ubaciti u novi <div class="results">
 		--><div class="main">
 			<div class="container">
+				<h3>Add a new person:</h3>
+				<form class="input-person"><br>
+					<input type="text" id="person" placeholder="Enter a person's name"><br>
+					<input type="submit" value="Create">
+				</form>
+				<br><br>
+
 				<h2>PR PR Youth of the Nation!</h2>
-				<form class="input">
+				<form class="input-pr">
 					Name:<br>
 					<input type="text" id="name" placeholder="Enter your name mortal!" ng-model="details.name" required><br>
 					Lift:<br>
