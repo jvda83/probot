@@ -1,3 +1,7 @@
+* {
+  margin: 0; padding: 0;
+  }
+
 html, body {
 	padding: 0;
 	margin: 0;
@@ -8,16 +12,33 @@ body {
 	font-weight: 100;
 }
 
+
 .container {
 	margin: 0 auto;
 	max-width: 940px;
 	padding: 0 10px;
 	text-align: center;
-	background: url("");
 	position: relative;
 }
 
+.header {
+	margin:0 auto;
+	padding: 0;
+	height:300px;
+	display: inline-block;
+	width: 100%;
+}
 
+.header p {
+	display: inline-block;
+	clear:left;
+	font-family: 'Cinzel', serif;
+	font-size: 48px;
+}
+
+.header .container{
+
+}
 
 /* Title */
 
@@ -28,6 +49,9 @@ body {
   	-o-background-size: cover;
 	background-size: cover;
 	height: 600px;
+	margin-top: 0;
+	display: inline-block;
+	width: 100%;
 }
 
 .title .container {
@@ -51,7 +75,8 @@ body {
 }
 
 .main {
-	margin:30px auto;
+	margin: 0 auto;
+	
 }
 
 .main .container{
